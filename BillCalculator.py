@@ -1,6 +1,6 @@
 import stdio 
 
-def cal_total(subtotal, final_taxes, final_tips):
+def calculate_total(subtotal, final_taxes, final_tips):
     return subtotal + final_tips + final_taxes
 
 def shared_total(total1, people):
@@ -32,7 +32,7 @@ def main():
     tips = float(input("Please enter tip percentage: "))
     final_taxes = (taxes / 100) * subtotal
     final_tips = (tips / 100) * subtotal
-    total1 = cal_total(subtotal, final_tips, final_taxes)
+    total1 = calculate_total(subtotal, final_tips, final_taxes)
     
     while True:
         ask = input("Do you want to split bill? (Yes/No): ").lower()
